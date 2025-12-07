@@ -7,11 +7,18 @@ import com.swarupSawant.generics.User;
 
 public class Main {
     public static void main(String[] args) {
-       var list = new List();
-       list.add(1);
-       list.add("1");
-       list.add(new User());
 
-       int number = (int)list.get(0);
+        //integer generics..
+       GenericList<Integer> list = new GenericList<>();
+       list.add(5);
+       int num = list.get(0);
+
+       //String generics..
+       GenericList<String> names = new GenericList<>();
+       names.add("swarup");
+
+       String name = names.get(0);
+
+
     }
 }
